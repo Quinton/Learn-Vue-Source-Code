@@ -57,7 +57,7 @@ let car = {
 export class Observer {
   constructor (value) {
     this.value = value
-    // 给value新增一个__ob__属性，值为该value的Observr实例
+    // 给value新增一个__ob__属性，值为该value的Observer实例
     // 相当于为value打上标记，表示它已经被转化成响应式了，避免重复操作  
     def(value,'__ob__',this)    
     if (Array.isArray(value)) {
